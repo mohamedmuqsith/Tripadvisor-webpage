@@ -27,8 +27,19 @@
     padding: 10px;
     font-weight: bold;
     opacity: 0.9;
-   
     border-radius: 20px;
+    animation-name: header-p;
+    animation-duration: 3s;
+}
+@keyframes header-p{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        background-color: #34E0A1;
+        color: #090909;
+    }
 }
 .header-section__contant p:hover{
    
@@ -60,7 +71,21 @@
     padding-bottom: 10px;
     border-radius: 30px;
     border: none;
+    animation-name: button;
+    animation-duration: 3s;  
+    cursor: pointer;
     
+}
+@keyframes button{
+    0%{
+        background-color: #2f9ff4;
+        color: rgb(12, 12, 12);
+
+    }
+    100%{
+        background-color: #34E0A1;
+        color: #090909;
+    }
 }
 /* <!-- section-two --> */
 .section-two{
@@ -183,7 +208,7 @@
     border-radius: 10px;
 }
 .section-six__title{
-    margin-left: 80px;
+    margin-left: 6%;
 }
 
 /* <!--section-seven--> */
@@ -198,7 +223,7 @@
     border-radius: 10px;
 }
 .section-seven__title{
-    margin-left: 80px;
+    margin-left: 6%;
 }
 .section-seven__symbol{
     text-align: center;
@@ -235,9 +260,18 @@ text-align: center;
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
    
+    cursor: pointer;
+    font-size: 100%;
    }
+ .footer-section__one p{
+    padding-bottom: 10px;
+ }
+ .f{
+    font-weight: bold;
+    font-size: 100%;
+    
+ }
 @media screen and (max-width:1350px) {
     .section-four__search__windows .search-input__windows{
         width: 78%;
